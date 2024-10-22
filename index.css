@@ -16,7 +16,7 @@ body {
 html,
 body {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     font-family: "Montserrat", sans-serif;
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    min-height: inherit;
+    height: 100vh;
     box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.5), -5px 0px 10px 2px rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(#005596, #003d6c);
 }
@@ -38,13 +38,16 @@ body {
 .sidebar {
     /* border: 1px solid blue; */
     width: 10%;
-    min-height: inherit;
+    height: 100vh;
 }
 
 nav {
     background: #0082e6;
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a img {
@@ -62,183 +65,26 @@ a.logo {
     cursor: pointer;
 }
 
-nav ul {
-    float: right;
-    margin-right: 20px;
+.menu-list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-nav ul li {
+ul li a {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
+    width: 200px;
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 50px;
+    transition: all .5s;
 }
 
-nav ul li a:hover {
+ul li a:hover {
     background: #1b9bff;
-    transition: .5s;
-}
-
-#about {
-    margin-top: 25px;
-    border: 1px solid red;
-}
-
-.about {
-    width: 100%;
-    height: 400px;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.about-header {
-    width: 100%;
-    height: 15%;
-    text-align: center;
-    border: 1px solid white;
-}
-
-.about-header h1 {
-    font-size: 32px;
     color: white;
-}
-
-.about-content {
-    /* border: solid 1px; */
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#about p {
-    color: white;
-    font-size: 26px;
-    text-align: right;
-    margin-right: 15px;
-}
-
-#about span {
-    background: linear-gradient(to right bottom, white, rgb(47, 140, 211));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.about-foto {
-    /* border: 1px solid yellow; */
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.about-foto img {
-    margin-left: 15px;
-}
-
-#projects {
-    display: flex;
-    margin-top: 25px;
-}
-
-.projects {
-    /* border: 1px solid red; */
-    width: 80%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects-header {
-    /* border: 1px solid green; */
-    width: 100%;
-    height: 15%;
-    text-align: center;
-}
-
-.projects h1 {
-    font-size: 32px;
-    color: white;
-}
-
-.projects-content-container {
-    /* border: 1px solid yellow; */
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 40px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects a {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 50%;
-}
-
-.projects-content-div {
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid white; */
-    /* box-shadow: 1px 1px 10px 1px rgb(255, 255, 255); */
-    transition: all 0.3s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects-content-div:hover {
-    /* border: rgb(47, 140, 211); */
-    box-shadow: 1px 1px 10px 1px rgb(47, 140, 211);
-}
-
-.projects a img {
-    width: 45%;
-    height: auto;
-    border: none;
-}
-
-.projects-content-div label {
-    color: white;
-    font-size: 12px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-}
-
-#contact {
-    display: flex;
-    margin-top: 25px;
-}
-
-.contact {
-    /* border: 1px solid green; */
-    width: 100%;
-    height: 15%;
-    text-align: center;
-}
-
-.contact h1 {
-    font-size: 32px;
-    color: white;
+    transform: translateX(20px);
 }

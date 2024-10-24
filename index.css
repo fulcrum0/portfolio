@@ -43,7 +43,7 @@ a span {
     -webkit-text-fill-color: transparent;
 }
 
-span .navbar a {
+.navbar a {
     font-size: 18px;
     color: white;
     font-weight: 500;

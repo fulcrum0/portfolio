@@ -43,7 +43,11 @@ a span {
     -webkit-text-fill-color: transparent;
 }
 
-span .navbar a {
+.navbar a {
+    background: linear-gradient(90deg, white, #FEE715);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 18px;
     color: white;
     font-weight: 500;

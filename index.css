@@ -9,6 +9,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: #0000005a;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -43,14 +47,35 @@ a span {
     -webkit-text-fill-color: transparent;
 }
 
-.navbar a {
-<<<<<<< HEAD
-=======
+.nav-home {
     background: linear-gradient(90deg, white, #FEE715);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
->>>>>>> c0aa1c5fe1e6ee6656974c8da50e90aa669e39af
+}
+
+.nav-about-me {
+    background: linear-gradient(90deg, #FEE715, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-projects {
+    background: linear-gradient(90deg, white, #FEE715);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-contact {
+    background: linear-gradient(90deg, #FEE715, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar a {
     font-size: 18px;
     color: white;
     font-weight: 500;
@@ -139,6 +164,10 @@ a span {
     margin: 2em 0 3em;
 }
 
+.contact-form {
+    background-color: #FEE715;
+}
+
 .contact-form h2 {
     text-align: center;
     margin-top: 3em;
@@ -182,6 +211,7 @@ a span {
     font-weight: 600;
     transition: .3s ease;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .btn-1:hover {

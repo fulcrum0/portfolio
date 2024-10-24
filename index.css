@@ -44,6 +44,13 @@ a span {
 }
 
 .navbar a {
+<<<<<<< HEAD
+=======
+    background: linear-gradient(90deg, white, #FEE715);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+>>>>>>> c0aa1c5fe1e6ee6656974c8da50e90aa669e39af
     font-size: 18px;
     color: white;
     font-weight: 500;

@@ -165,7 +165,7 @@ a span {
     min-height: 100vh;
     background: #FEE715;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 30px 12% 0;
@@ -182,53 +182,55 @@ a span {
     margin: 25px 0 30px;
 }
 
-.projects input[type="submit"] {
-    margin: 5% 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.drop-down-projects {
+.projects-container {
     width: 100%;
-    height: 300px;
+    height: 500px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 20px;
+    margin-bottom: 15px;
+    gap: 10px;
 }
 
-.drop-down-projects a i {
+.projects-container a i {
     font-size: 40px;
 }
 
-.drop-down-projects i {
+.projects-container i {
     font-size: 60px;
 }
 
-.drop-down-projects .my-projects {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid blue; */
+.projects-container .my-projects {
+    /* border: 1px solid black; */
+    width: 10%;
+    height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.projects-container .my-projects:hover {
+    width: 16%;
+}
+
+.my-projects a {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.my-projects img {
+    width: 100%;
+}
+
+.my-projects p {
     text-align: center;
-    align-items: center;
-}
-
-.my-projects-img-box {
-    width: 100%;
-    height: 70%;
-    /* border: 1px solid black; */
-}
-
-.my-projects-img-box img {
-    width: 100%;
-    border-radius: 15px;
 }
 
 .contact {

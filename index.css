@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 html {
@@ -107,7 +107,7 @@ a span {
 
 
 .heading {
-    font-size: 42px;
+    font-size: 52px;
 }
 
 .left {
@@ -124,20 +124,20 @@ a span {
     background: #FEE715;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 7em;
     padding: 30px 12% 0;
     color: #101820;
 }
 
-.home-content p {
-    text-align: left;
-    font-size: 18px;
-    margin: 25px 0 30px;
+.home h3 {
+    text-align: center;
 }
 
-.img-box img {
-    border-radius: 50%;
-    width: 450px;
+.home-content p {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 30px;
 }
 
 ::-webkit-scrollbar {
@@ -156,7 +156,7 @@ a span {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 12% 8%;
     gap: 10em;
@@ -166,15 +166,28 @@ a span {
 
 .about-img img {
     position: relative;
-    width: 550px;
+    width: 450px;
     box-shadow: 0 0 25px #90830d, 0 0 50px #90830d;
     border-radius: 50%;
 }
 
-.about-content p {
-    font-size: 18px;
-    margin: 25px 0 30px;
-    text-align: right;
+.about-content {
+    width: 800px;
+}
+
+.about-content h3 {
+    text-align: center;
+}
+
+.about-content ul {
+    font-size: 24px;
+    margin: 40px 0 30px;
+    text-align: left;
+}
+
+.about-content ul li {
+    list-style: circle;
+    margin: 15px;
 }
 
 .projects {
@@ -184,12 +197,12 @@ a span {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 12% 0;
+    padding: 80px 12% 0;
     color: #101820;
 }
 
 .projects-content {
-    margin-top: 25px;
+    margin-top: 50px;
     /* border: 1px solid red; */
     width: 100%;
     height: 200px;
@@ -201,15 +214,15 @@ a span {
 }
 
 .projects-content p {
-    font-size: 18px;
-    margin: 5px 0 30px 0;
+    font-size: 24px;
+    margin: 40px 0 30px 0;
 }
 
 .projects-container {
     width: 100%;
-    height: 400px;
+    height: 600px;
     /* border: 1px solid black; */
-    margin-top: 10px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +292,10 @@ a span {
     height: 300px;
 }
 
+.contact-content h3 {
+    font-size: 80px;
+}
+
 .contact-icons {
     display: flex;
     justify-content: space-between;
@@ -287,8 +304,8 @@ a span {
 
 .contact-icons .icons {
     text-align: center;
-    margin: 15px 30px;
-    font-size: 20px;
+    margin: 15px 50px;
+    font-size: 32px;
     color: #FEE715;
     cursor: pointer;
     transition: all .3s ease;

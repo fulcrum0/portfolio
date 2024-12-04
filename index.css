@@ -324,3 +324,131 @@ a span {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 8%;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .home-content p {
+        font-size: 22px;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .about-content ul {
+        font-size: 20px;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+    }
+
+    .projects-container .my-projects {
+        width: 40%;
+        height: auto;
+    }
+
+    .projects-container .my-projects img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    .home-content h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        margin-bottom: 20px;
+    }
+
+    .about-content ul {
+        text-align: center;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-container .my-projects {
+        width: 80%;
+        height: auto;
+    }
+
+    .contact-content h3 {
+        font-size: 50px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+    }
+
+    .contact-icons .icons {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .about-img img {
+        width: 200px;
+    }
+
+    .projects-container .my-projects {
+        width: 100%;
+    }
+
+    .contact-content h3 {
+        font-size: 36px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
